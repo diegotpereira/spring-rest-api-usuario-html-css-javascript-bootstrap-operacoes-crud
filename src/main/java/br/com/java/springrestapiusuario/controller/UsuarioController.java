@@ -49,7 +49,7 @@ public class UsuarioController {
            .map(record -> {
                record.setNome(usuario.getNome());
                record.setSobrenome(usuario.getSobrenome());
-               record.setUsuario(usuario.getUsuario());
+               record.setUsuarionome(usuario.getUsuarionome());
                record.setEmail(usuario.getEmail());
                record.setImageURL(usuario.getImageURL());
 

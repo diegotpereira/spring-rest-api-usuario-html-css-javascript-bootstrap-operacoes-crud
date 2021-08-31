@@ -16,24 +16,24 @@ public class Usuario {
     @Column(name = "sobrenome")
     private String sobrenome;
 
-    @Column
+    @Column(name = "email")
     private String email;
 
-    @Column
-    private String usuario;
+    @Column(name = "usuarionome")
+    private String usuarionome;
 
-    @Column
+    @Column (name = "imageURL")
     private String imageURL;
 
     public Usuario() {
     }
 
-    public Usuario(long id, String nome, String sobrenome, String email, String usuario, String imageURL) {
+    public Usuario(long id, String nome, String sobrenome, String email, String usuarionome, String imageURL) {
         this.id = id;
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;
-        this.usuario = usuario;
+        this.usuarionome = usuarionome;
         this.imageURL = imageURL;
     }
 
@@ -69,12 +69,12 @@ public class Usuario {
         this.email = email;
     }
 
-    public String getUsuario() {
-        return usuario;
+    public String getUsuarionome() {
+        return usuarionome;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setUsuarionome(String usuarionome) {
+        this.usuarionome = usuarionome;
     }
 
     public String getImageURL() {
@@ -88,6 +88,6 @@ public class Usuario {
     @Override
     public String toString() {
         return "Usuario [email=" + email + ", id=" + id + ", imageURL=" + imageURL + ", nome=" + nome + ", sobrenome="
-                + sobrenome + ", usuario=" + usuario + "]";
+                + sobrenome + ", usuarionome=" + usuarionome + "]";
     }
 }
